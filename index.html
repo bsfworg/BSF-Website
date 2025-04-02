@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Big Software Foundation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="/static/assets/css/styles.css" />
+</head>
+<body>
+  <header>
+    <div style="font-size: 1.5rem; font-weight: 600;">BSF</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#values">Values</a>
+      <a href="#projects">Projects</a>
+      <a href="#recommend-project">Contact Us</a>
+    </nav>
+  </header>
+
+  <section id="about" class="hero">
+    <div class="hero-text">
+      <h1><span style="color:#1e88e5;">Welcome to</span><br>Big Software Foundation</h1>
+      <p>We build simple, future-ready software that brings people together — whether you're a student, educator, or innovator. Let’s shape tomorrow’s tools, today.</p>
+      <a class="btn" href="#projects"><i class="fas fa-eye"></i> Explore Our Projects</a>
+    </div>
+    <img src="/static/assets/img/logo.png" alt="Big Software Foundation Logo" class="hero-logo">
+  </section>
+
+  <section class="section animate-on-scroll" id="bsf-section">
+    <div class="bsf-two-col">
+      <!-- Left: Pie -->
+      <div class="bsf-pie-wrapper">
+        <svg viewBox="0 0 200 200" class="bsf-pie">
+          <path d="M100,100 L100,0 A100,100 0 0,1 186.6,50 Z" fill="#ed3935" data-letter="B"></path>
+          <path d="M100,100 L186.6,50 A100,100 0 0,1 100,200 Z" fill="#45a664" data-letter="S"></path>
+          <path d="M100,100 L100,200 A100,100 0 0,1 100,0 Z" fill="#3693de" data-letter="F"></path>
+
+          <text x="140" y="40" text-anchor="middle" class="bsf-letter">B</text>
+          <text x="140" y="160" text-anchor="middle" class="bsf-letter">S</text>
+          <text x="60" y="100" text-anchor="middle" class="bsf-letter">F</text>
+        </svg>
+      </div>
+
+      <!-- Right: Card -->
+      <div class="bsf-description-card" id="bsf-desc">
+        <h3>Click a letter</h3>
+        <p>Explore what BSF stands for and how each value drives our vision.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="values" class="section values animate-on-scroll">
+    <h2>Our Values</h2>
+    <div class="tabs">
+      <button class="tab-button active" onclick="showTab('innovation')">Innovation</button>
+      <button class="tab-button" onclick="showTab('community')">Community</button>
+      <button class="tab-button" onclick="showTab('usability')">Usability</button>
+      <button class="tab-button" onclick="showTab('security')">Security</button>
+      <button class="tab-button" onclick="showTab('education')">Education</button>
+    </div>
+    <div id="innovation" class="tab-content active">
+      <div class="tab-icon"><i class="fas fa-lightbulb"></i></div>
+      <h3>Innovation</h3>
+      <p>We thrive on innovation — constantly exploring emerging technologies, creative strategies, and forward-thinking methodologies. Our mission is to build not only for the present but for the future of digital experiences in education and community software.</p>
+    </div>
+    <div id="community" class="tab-content">
+      <div class="tab-icon"><i class="fas fa-users"></i></div>
+      <h3>Community</h3>
+      <p>We believe in the power of people. Our platforms are designed to bring communities together, spark conversations, and help users feel included and heard. Whether it’s a school club or a university-wide app, we help people bond over shared experiences.</p>
+    </div>
+    <div id="usability" class="tab-content">
+      <div class="tab-icon"><i class="fas fa-mouse-pointer"></i></div>
+      <h3>Usability</h3>
+      <p>Technology should be seamless. Our commitment to usability ensures that our platforms are intuitive, elegant, and accessible for all users regardless of technical skill. We prioritize clean interfaces, fast interactions, and consistent user journeys.</p>
+    </div>
+    <div id="security" class="tab-content">
+      <div class="tab-icon"><i class="fas fa-shield-alt"></i></div>
+      <h3>Security</h3>
+      <p>Trust is essential. We uphold rigorous security practices to protect user data, ensure platform integrity, and meet high privacy standards. Encryption, regular audits, and privacy-first architecture are embedded into our process.</p>
+    </div>
+    <div id="education" class="tab-content">
+      <div class="tab-icon"><i class="fas fa-graduation-cap"></i></div>
+      <h3>Education</h3>
+      <p>We build tools that enhance education, foster engagement, and reduce friction in academic communication. From helping students discover opportunities to aiding teachers in streamlining workflow, our software serves to elevate learning environments.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section animate-on-scroll">
+    <h2>Projects</h2>
+    <p>We develop web applications tailored for academic institutions, enabling enhanced communication, collaboration, and engagement. Our tools help unify campus communities and improve student experiences through simplicity and innovation.</p>
+    <div class="projects">
+      <div class="card">
+        <img src="/static/assets/img/ranters.png" alt="Ranters Logo">
+        <div class="card-content">
+          <h3>Ranters</h3>
+          <p>An anonymous platform for sharing short, gossip-style messages in small communities. Ranters brings a sense of open expression while preserving user anonymity, perfect for school and college circles.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/static/assets/img/unimates.png" alt="Unimates Logo">
+        <div class="card-content">
+          <h3>Unimates</h3>
+          <p>Find friends or dates by comparing profiles in a fun, tournament-style format. Unimates makes connecting fun and intuitive, reducing social anxiety with gamified matchmaking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="project-showcase" class="section animate-on-scroll">
+    <div class="project-showcase-wrapper">
+      <div class="project-tabs">
+        <img src="/static/assets/img/ranters.png" alt="Ranters Logo" onclick="showProject(this, 'ranters')" class="project-tab active">
+        <img src="/static/assets/img/unimates.png" alt="Unimates Logo" onclick="showProject(this, 'unimates')" class="project-tab">
+      </div>
+
+      <div class="project-showcase-content">
+        <div class="project-text">
+          <div id="ranters" class="project-content">
+            <h3>Ranters</h3>
+            <p>An anonymous platform for sharing short, gossip-style messages in small communities. Ranters brings a sense of open expression while preserving user anonymity, perfect for school and college circles. Features include moderation tools, upvotes, and customizable community settings.</p>
+            <div class="advantages">
+              <div class="advantage"><i class="fas fa-user-secret"></i><div>Anonymous Posting</div></div>
+              <div class="advantage"><i class="fas fa-vote-yea"></i><div>Post Reactions</div></div>
+              <div class="advantage"><i class="fas fa-gavel"></i><div>Moderation Tools</div></div>
+              <div class="advantage"><i class="fas fa-cogs"></i><div>Various Topics</div></div>
+            </div>
+          </div>
+          <div id="unimates" class="project-content hidden">
+            <h3>Unimates</h3>
+            <p>Find friends or dates by comparing profiles in a fun, tournament-style format. Unimates makes connecting fun and intuitive, reducing social anxiety with gamified matchmaking. Includes profile preferences, school filters, and swipe interactions for rapid decisions.</p>
+            <div class="advantages">
+              <div class="advantage"><i class="fas fa-heart"></i><div>Matchmaking</div></div>
+              <div class="advantage"><i class="fas fa-gamepad"></i><div>Gamified UX</div></div>
+              <div class="advantage"><i class="fas fa-sliders-h"></i><div>Profile Filters</div></div>
+              <div class="advantage"><i class="fas fa-user-friends"></i><div>Social Discovery</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-image">
+          <img id="project-image" src="/static/assets/img/demo-ranters.png" alt="Demo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="recommend-project" class="section animate-on-scroll">
+    <h2>Recommend a Project</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: flex-start;">
+      <div style="flex: 1 1 45%;">
+        <h3 style="margin-bottom: 1rem; color: #1e88e5;">Your voice matters!</h3>
+        <p style="color: #555; line-height: 1.6;">
+          We believe great ideas can come from anywhere — especially from the people who use our products.
+          Whether you're a student, educator, or innovator, your insights help us create tools that matter.
+          Share your concept with us, and together we can shape the future of education and community platforms.
+        </p>
+      </div>
+      <form style="flex: 1 1 50%; display: flex; flex-direction: column; gap: 1rem; background: #fff; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); padding: 2rem;">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <input type="text" placeholder="Project Name">
+        <textarea rows="4" placeholder="Describe your project idea..."></textarea>
+        <button type="submit">Submit Recommendation</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section team animate-on-scroll">
+    <h2>Meet the <span style="color:#1e88e5">Team</span></h2>
+    <div class="team-members">
+      <div class="member">
+        <img src="/static/assets/img/ivan.png" alt="Ivan Nikolskiy">
+        <h4>Ivan Nikolskiy</h4>
+        <p>Founder & Executive Developer</p>
+      </div>
+      <div class="member">
+        <img src="/static/assets/img/myroslav.png" alt="Myroslav Sliusarchuk">
+        <h4>Myroslav Sliusarchuk</h4>
+        <p>Co-Founder & Developer</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="partners" class="section animate-on-scroll" style="padding: 4rem 2rem 2rem">
+    <h2 style="text-align: center; margin-bottom: 2rem;">Our Partners</h2>
+    <div class="partners-carousel">
+      <div class="partner-logo"><img src="/static/assets/img/entysec.png" alt="Partner 2"></div>
+      <div class="partner-logo"><img src="/static/assets/img/t-mobile.png" alt="Partner 3"></div>
+      <div class="partner-logo"><img src="/static/assets/img/timeweb.png" alt="Partner 4"></div>
+    </div>
+  </section>
+
+  <footer style="background: linear-gradient(135deg, #1e88e5, #1565c0); color: #fff; text-align: center;">
+    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Thank you for visiting Big Software Foundation</h3>
+    <p style="max-width: 600px; margin: auto; line-height: 1.6; font-size: 1rem;">We’re on a mission to build software that empowers, inspires, and unites. Whether you're a developer, educator, student or startup — there's a place for you with us.</p>
+    <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8;">&copy; 2025 Big Software Foundation. All rights reserved.</p>
+  </footer>
+
+  <script src="/static/assets/js/main.js"></script>
+</body>
+</html>
