@@ -450,7 +450,7 @@ footer {
 }
 
 .bsf-description-card {
-  flex: 1 1 300px;
+  flex: 1 1;
   background: #fff;
   border-radius: 12px;
   padding: 1.5rem;
