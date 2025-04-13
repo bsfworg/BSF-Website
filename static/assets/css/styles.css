@@ -106,13 +106,18 @@ header img {
 }
 
 .hero {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #f0f4ff, #ffffff);
+  border-bottom: 1px solid #ddd;
+}
+
+.hero-inner {
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 5rem 2rem;
-  background: linear-gradient(135deg, #f0f4ff, #ffffff);
-  border-bottom: 1px solid #ddd;
+  max-width: 1000px;
 }
 
 .hero-text {
@@ -157,7 +162,7 @@ header img {
 }
 
 @media (max-width: 768px) {
-  .hero {
+  .hero-inner {
     flex-direction: column-reverse; /* 👈 This flips the order on mobile */
     text-align: center;
   }
